@@ -1,0 +1,88 @@
+<html>
+<head>
+<title>
+Form-page
+</title>
+<meta charset="utf-8" name="viewport" content= "width=device-width, initial-scale=1.0">
+<style>
+    h1{
+        text-align: center;
+        margin-top: 1.3cm;
+    }
+    body{
+        background-color: rgb(224, 61, 61);
+        color: antiquewhite;
+        
+    }
+    .form{
+        margin-top: 1.2cm;
+        border: 6px groove rgb(202, 2, 2);
+        margin-left: 7cm;
+        margin-right: 7cm;
+        padding-top: 1cm;
+        padding-left: 1cm;
+        font-size: 28px;
+        background-color: blanchedalmond;
+        color: black;
+        border-radius: 7px;
+        font-family: Arial, Helvetica, sans-serif;
+
+    }
+    input[type=text] {
+        font-size: 25px;
+        font-family: Arial, Helvetica, sans-serif;
+        text-transform: capitalize;
+        border-radius: 10px;
+      }
+      input[type=email] {
+        font-size: 25px;
+        font-family: Arial, Helvetica, sans-serif;
+        text-transform: lowercase;
+        border-radius: 10px;
+      }
+      input [select=dropdown]{
+        font-size: 25px;
+        font-family: Arial, Helvetica, sans-serif;
+        }
+      #sub:hover{
+          background-color: green;
+          color: white;
+          border-radius: 15px;
+      }
+      p{
+          font-family: 'Courier New', Courier, monospace;
+          margin-top: 1cm;
+      }
+</style>
+</head>
+<body>
+    <h1>
+        REGISTRATION-FORM
+        </h1>
+<div class="form">
+<form>
+    Name
+    <input type="text" name="First_name" required style="margin-left: 6.37cm";><br><br>
+    Enrollment Number
+    <input type="text" name="en" maxlength="12" required style="margin-left: 2cm"><br><br>
+    Email ID
+    <input type="email" name="Mail_id" required style="margin-left: 5.6cm"><br><br>
+    Choose your exam date
+    <select name = "dropdown" required style="font-size: 25px; margin-left: 0.6cm; border-radius:10px;">
+        <option value = "day1">26-Feb-2022</option>
+        <option value = "day2">27-Feb-2022</option>
+        <option value = "day3">05-Mar-2022</option>
+        <option value = "day4">06-Mar-2022</option>
+     </select><br><br>
+     Select Exam city<br>
+     <input type="radio" name="Chennai" value="Chennai" required="required" style="font-size: 25px; margin-left: 8.6cm ;">Chennai<br>
+     <input type="radio" name="Chennai" value="Kovai" required="required" style="font-size: 25px; margin-left: 8.6cm ;">Coimbatore<br>
+     <input type="radio" name="Chennai" value="Madurai" required="required" style="font-size: 25px; margin-left: 8.6cm ;">Madurai
+     <br><br>
+     <input type = "submit" name = "submit" value = "Submit" id = "sub" style="font-size: 25px; margin-left:10.7cm;  padding:3px;">
+</form>
+</div>
+
+<p style="text-align: center;">
+    © Narayanan | 2022
+</p>
